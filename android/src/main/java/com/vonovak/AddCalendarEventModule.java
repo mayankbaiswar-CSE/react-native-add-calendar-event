@@ -114,7 +114,11 @@ public class AddCalendarEventModule extends ReactContextBaseJavaModule implement
             }
 
             setPriorEventId(getCurrentActivity());
-            getReactApplicationContext().startActivityForResult(calendarIntent, ADD_EVENT_REQUEST_CODE, Bundle.EMPTY);
+            try {
+                getReactApplicationContext().startActivityForResult(calendarIntent, ADD_EVENT_REQUEST_CODE, Bundle.EMPTY);
+            }catch (ActivityNotFoundException ex) {
+                Toast.makeText(getReactApplicationContext(), "No calendar app found.", Toast.LENGTH_LONG).show();
+            }
         } catch (ParseException e) {
             rejectPromise(e);
         }
