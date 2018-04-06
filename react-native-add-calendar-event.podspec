@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = package_json['license']
   s.platform     = :ios, '8.0'
   s.source       = {
-    :git => 'https://github.com/vonovak/react-native-add-calendar-event.git'
+    :git => 'https://github.com/mayankbaiswar-CSE/react-native-add-calendar-event.git'
   }
   s.source_files  = 'ios/*.{h,m}'
 
