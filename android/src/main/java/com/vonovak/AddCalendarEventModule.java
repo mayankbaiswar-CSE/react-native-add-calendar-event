@@ -1,6 +1,7 @@
 package com.vonovak;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.ContentUris;
 import android.content.CursorLoader;
 import android.content.Intent;
@@ -12,6 +13,7 @@ import android.app.LoaderManager;
 import android.content.Loader;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.facebook.react.bridge.*;
 
