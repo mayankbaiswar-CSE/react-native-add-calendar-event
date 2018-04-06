@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.name         = 'react-native-add-calendar-event'
   s.version      = package_json['version']
   s.summary      = package_json['description']
-  s.homepage     = 'https://github.com/vonovak/react-native-add-calendar-event'
+  s.homepage     = 'https://github.com/mayankbaiswar-CSE/react-native-add-calendar-event'
   s.author       = package_json['author']
   s.license      = package_json['license']
   s.platform     = :ios, '8.0'
